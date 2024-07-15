@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    width: 1080px;
+    height: 217px;
+    background: linear-gradient(to right, #1a2a4b,#4D332F,#846653 );
+    color: #BD9678;
+    padding: 40px;
+    position: relative;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    left: 73px;
+    top: 47%;
+    height: 30%;
+    width: 2px;
+    background-color:#BD9678
+;
+}
+.left-content {
+    float: left;
+    text-align: left;
+    margin-left: 50px;
+   
+}
+.right-content {
+    float: right;
+    text-align: right;
+    margin-right: 50px;
+
+}
+.name {
+    font-family: Felix Titling;
+       font-size: 38px;
+       font-weight: 400;
+      line-height: 44.44px;
+      text-align: left;
+
+}
+.title {
+    font-family: Felix Titling;
+     font-size: 20px;
+      font-weight: 400;
+       line-height: 23.39px;
+       text-align: left;
+
+}
+.contact {
+    width: 346px;
+     height: 68px;
+    opacity: 0.5px;
+    margin-top: 30px;
+
+}
+
+
+.img{
+    width: 350px;
+    margin-top: 45px;
+
+
+}
+@media (max-width: 320px ) {
+   
+
+.name,.title{
+margin-left: 25px;
+
+}
+
+.contact {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-left: 40px;
+}
+.card::before{
+    top: 145px;
+    height: 20%;
+    margin-left: 40px;
+}
+.right-content{
+    margin-top: 60%;
+}
+.card{
+height: 1000px;
+}
+
+
+.img{
+    width: 300px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.contact {
+    font-size: 15px;
+    line-height: 1.4;
+
+}
+.card::before{
+    top: 570px;
+    height: 10%;
+
+}
+
+}
+
+
+
+@media (min-width: 340px )  and (max-width: 700px ) {
+    
+
+
+.right-content{
+    margin-top: 60%;
+}
+.card{
+height: 950px;
+}
+
+
+.img{
+    width: 330px;
+   
+    margin: 70px 0 30px 50px;
+}
+.contact {
+    font-size: 17px;
+    line-height: 1.4;
+
+}
+.card::before{
+    top: 57%;
+    height: 15%;
+
+}
+}
+
+@media (min-width: 720px )  and (max-width:880px ) {
+    
+   
+
+.img{
+    width: 270px;
+
+}
+.contact {
+    font-size: 15px;
+    line-height: 1.4;
+
+}
+.card::before{
+    margin-left:-20px;
+    height: 27%;
+
+}
+.left-content{
+    margin-left: 20px;
+}
+.right-content{
+    margin: auto;
+}
+}
